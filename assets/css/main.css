@@ -1204,7 +1204,9 @@ section,
 #latest-news .post-author, #latest-news .post-date {
   margin-bottom: 0px;
 }
-
+#insights-newsletter .news_event_title i{
+  font-size: 25px;
+}
 
 
 

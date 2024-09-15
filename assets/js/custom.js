@@ -9,16 +9,12 @@ $(function(){
       $('#mySidenav').css('width', '0px');
     });
 
-
     $('.search-trigger').click(function(){
       $(this).attr('search-close', true);
 
       $('#mySearchbar').show();
       $('#mySearchbar').css('width', '450px');
     });
-
-
-
 
 
     // Get the elements
@@ -37,10 +33,4 @@ $(function(){
             searchbar.style.display = 'none'; // Hide the search bar
         }
     });
-
-
-
-
-
-
 });
