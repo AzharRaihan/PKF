@@ -1,9 +1,16 @@
+
+
+
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1400px;
     }
 }
-
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1290px;
+    }
+}
 /*	Laptop PC: 1200px.
     Gutters: 24px.
     Outer margins: 28px.
@@ -14,6 +21,12 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 1200px) and (max-width: 1366.98px) {
     .end-menu .dropdown-menu {
         transform: translate(887px, 60px) !important;
+    }
+    .carousel_custom_item > div {
+        height: 586px;
+    }
+    .carousel_custom_item.Left {
+        background-position: calc(0% - calc(350px / 2));
     }
 }
 

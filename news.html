@@ -30,7 +30,7 @@
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo/logo.png" alt="">
+          <img src="assets/img/logo/pkf-2-logo.svg" alt="">
         </a>
         <nav id="navmenu" class="navmenu">
           <ul>
@@ -41,38 +41,110 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-text-right"></i>
+          <i class="mobile-nav-toggle d-xl-none  bi bi-list"></i>
         </nav>
         <div class="end-menu">
+          <li class="d-flex align-items-center request-callback">
+            <a href="#">Request Call Back</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-globe"></i>
               <span class="ln-title">English</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Arabic</a></li>
-              <li><a class="dropdown-item" href="#">Bangla</a></li>
-              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#"><span class="ln-active">Arabic</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>Bangla</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>English</span></a></li>
             </ul>
           </li>
           <a class="search-trigger" href="javascript:void(0)"><i class="bi bi-search"></i></a>
-          <a class="bar-trigger" href="javascript:void(0)"><i class="bi bi-text-right"></i></a>
+          <a class="bar-trigger" href="javascript:void(0)">
+            <i class="bi bi-list"></i>
+          </a>
+          <div id="MainNav" class="">
+            <nav class="mt-2 mobile_menu_inner">
+              <div class="d-flex justify-content-end align-items-center">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe"></i>
+                    <span class="ln-title">English</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span class="ln-active">Arabic</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Bangla</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>English</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="search-trigger-2" href="javascript:void(0)"><i class="bi bi-search"></i></a>
+                  <div id="mySearchbar-2" class="mySearchbar-2">
+                    <a href="javascript:void(0)" class="mySearchClosebtn">
+                      <button class="btn search-btn">Search</button>
+                    </a>
+                    <div class="d-flex align-items-center">
+                      <span>Search:</span>
+                      <input type="text" class="form-control" placeholder="Enter Keywords">
+                    </div>
+                  </div>
+                </li>
+                <button class="btn bar-trigger-2" href="javascript:void(0)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+                <ul class="m-menu">
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      Industires
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      News
+                    </a>
+                  </li>
+                  
+                </ul>
+                <div class="NavSocial">
+                  <a class="" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-wechat"></i>
+                  </a>
+                </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn"><i class="bi bi-x-circle"></i></a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Industries</a>
-      <a href="#">News</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
-    </div>
     <div id="mySearchbar" class="mySearchbar">
-      <a href="javascript:void(0)" class="mySearchClosebtn"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <input type="text" class="form-control" placeholder="Search here ...">
+      <a href="javascript:void(0)" class="mySearchClosebtn">
+        <button class="btn search-btn">Search</button>
+      </a>
+      <div class="d-flex align-items-center">
+        <span>Search:</span>
+        <input type="text" class="form-control" placeholder="Enter Keywords">
+      </div>
     </div>
   </header>
 
@@ -199,136 +271,82 @@
             <div id="latest-news" class="latest-news">
                 <h2>Latest News</h2>
                 <div class="row gy-4">
-                  <div class="col-xl-6 col-md-6">
+                  <div class="col-xl-6 col-md-12">
                     <article>
-                      <div class="post-img">
-                        <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
-                      </div>
-                      <p class="post-category">News Category</p>
-                      <h2 class="title">
-                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
-                      </h2>
                       <div class="d-flex align-items-center">
-                        <img src="assets/img/latest-news/news-publisher.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                         <div class="post-meta">
-                          <p class="post-author">Publisher Maria Doe</p>
                           <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
+                            <small></small>
+                            <span class="mr-2">Featured News</span>
+                            <time datetime="2022-01-01">2023-05-05</time>
                           </p>
                         </div>
                       </div>
-                    </article>
-                  </div>
-                  <div class="col-xl-6 col-md-6">
-                    <article>
-                      <div class="post-img">
-                        <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
-                      </div>
-                      <p class="post-category">News Category</p>
                       <h2 class="title">
                         <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
                       </h2>
-                      <div class="d-flex align-items-center">
-                        <img src="assets/img/latest-news/news-publisher.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="post-meta">
-                          <p class="post-author">Publisher Maria Doe</p>
-                          <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-xl-6 col-md-6">
-                    <article>
                       <div class="post-img">
                         <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
                       </div>
-                      <p class="post-category">News Category</p>
-                      <h2 class="title">
-                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
-                      </h2>
+                    </article>
+                  </div>
+                  <div class="col-xl-6 col-md-12">
+                    <article>
                       <div class="d-flex align-items-center">
-                        <img src="assets/img/latest-news/news-publisher.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                         <div class="post-meta">
-                          <p class="post-author">Publisher Maria Doe</p>
                           <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
+                            <small></small>
+                            <span class="mr-2">Featured News</span>
+                            <time datetime="2022-01-01">2023-05-05</time>
                           </p>
                         </div>
                       </div>
-                    </article>
-                  </div>
-                  <div class="col-xl-6 col-md-6">
-                    <article>
+                      <h2 class="title">
+                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
+                      </h2>
                       <div class="post-img">
                         <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
                       </div>
-                      <p class="post-category">News Category</p>
-                      <h2 class="title">
-                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
-                      </h2>
+                    </article>
+                  </div>
+                  <div class="col-xl-6 col-md-12">
+                    <article>
                       <div class="d-flex align-items-center">
-                        <img src="assets/img/latest-news/news-publisher.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                         <div class="post-meta">
-                          <p class="post-author">Publisher Maria Doe</p>
                           <p class="post-date">
-                            <time datetime="2022-01-01">Jan 1, 2022</time>
+                            <small></small>
+                            <span class="mr-2">Featured News</span>
+                            <time datetime="2022-01-01">2023-05-05</time>
                           </p>
                         </div>
                       </div>
+                      <h2 class="title">
+                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
+                      </h2>
+                      <div class="post-img">
+                        <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
+                      </div>
                     </article>
                   </div>
-                  <div class="col-12">
-                    <div id="insights-newsletter" class="insights-newsletter">
-                      <ul>
-                        <li>
-                          <a href="javascript:void(0)">
-                            <div class="news_event_title d-flex justify-content-between align-items-center">
-                              <h4>News & Events</h4>
-                              <i class="bi bi-arrow-right"></i>
-                            </div>
-                            <h2>March 2024 Worldwide Tax Update</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolores assumenda fugit labore veritatis neque recusandae necessitatibus atque, vel accusamus, earum, tenetur eum quasi nobis. Doloribus ab a voluptatem quia dolore quasi explicabo sit quam quod quo itaque ad numquam, aliquam error! Magnam quisquam beatae in. Libero, consectetur voluptas. Quo?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">
-                            <div class="news_event_title d-flex justify-content-between align-items-center">
-                              <h4>News & Events</h4>
-                              <i class="bi bi-arrow-right"></i>
-                            </div>
-                            <h2>March 2024 Worldwide Tax Update</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolores assumenda fugit labore veritatis neque recusandae necessitatibus atque, vel accusamus, earum, tenetur eum quasi nobis. Doloribus ab a voluptatem quia dolore quasi explicabo sit quam quod quo itaque ad numquam, aliquam error! Magnam quisquam beatae in. Libero, consectetur voluptas. Quo?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">
-                            <div class="news_event_title d-flex justify-content-between align-items-center">
-                              <h4>News & Events</h4>
-                              <i class="bi bi-arrow-right"></i>
-                            </div>
-                            <h2>March 2024 Worldwide Tax Update</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolores assumenda fugit labore veritatis neque recusandae necessitatibus atque, vel accusamus, earum, tenetur eum quasi nobis. Doloribus ab a voluptatem quia dolore quasi explicabo sit quam quod quo itaque ad numquam, aliquam error! Magnam quisquam beatae in. Libero, consectetur voluptas. Quo?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">
-                            <div class="news_event_title d-flex justify-content-between align-items-center">
-                              <h4>News & Events</h4>
-                              <i class="bi bi-arrow-right"></i>
-                            </div>
-                            <h2>March 2024 Worldwide Tax Update</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolores assumenda fugit labore veritatis neque recusandae necessitatibus atque, vel accusamus, earum, tenetur eum quasi nobis. Doloribus ab a voluptatem quia dolore quasi explicabo sit quam quod quo itaque ad numquam, aliquam error! Magnam quisquam beatae in. Libero, consectetur voluptas. Quo?</p>
-                          </a>
-                        </li>
-                      
-                      </ul>
-                     </div>
+                  <div class="col-xl-6 col-md-12">
+                    <article>
+                      <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                          <p class="post-date">
+                            <small></small>
+                            <span class="mr-2">Featured News</span>
+                            <time datetime="2022-01-01">2023-05-05</time>
+                          </p>
+                        </div>
+                      </div>
+                      <h2 class="title">
+                        <a href="blog-details.html">Title Dolorum optio tempore voluptas dignissimos</a>
+                      </h2>
+                      <div class="post-img">
+                        <img src="assets/img/latest-news/latest-news.jpg" alt="" class="img-fluid">
+                      </div>
+                    </article>
                   </div>
-
-
-
                 </div><!-- End recent posts list -->
               </div>
             </div>
@@ -347,28 +365,26 @@
   <footer id="footer" class="footer light-background">
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
+        <div class="col-lg-4 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">
-              <img src="assets/img/logo/logo.png" alt="">
+              <img src="assets/img/logo/pkf-2-logo.svg" alt="">
             </span>
           </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Golden Street</p>
-            <p>Shyamoly, Dhaka 1207</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+          
         </div>
-        <div class="col-lg-8 col-md-6">
+        <div class="col-lg-8 col-md-12">
           <div class="row">
-            <div class="col-lg-4 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Follow Us</h4>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-wechat"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
               <h4>Services</h4>
               <ul>
                 <li><a href="#">Audit & Assurance</a></li>
@@ -378,7 +394,7 @@
                 <li><a href="#">View All</a></li>
               </ul>
             </div>
-            <div class="col-lg-4 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-links">
               <h4>Links</h4>
               <ul>
                 <li><a href="#">PKF Shenzhen</a></li>
@@ -387,7 +403,7 @@
                 <li><a href="#">WeChat</a></li>
               </ul>
             </div>
-            <div class="col-lg-4 col-md-6 footer-links">
+            <div class="col-lg-3 col-md-6 footer-links">
               <h4>Resource</h4>
               <ul>
                 <li><a href="#">Careers</a></li>
@@ -401,10 +417,16 @@
         </div>
       </div>
     </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">PKF</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="#">Azhar Raihan</a>
+    <div class="container copyright mt-4">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">PKF</strong> <span>All Rights Reserved</span></p>
+        </div>
+        <div class="col-md-6 col-lg-8">
+          <p>PKF Hong Kong is a member firm of PKF Global, the network of member firms of PKF Global, each of which is a separate and independent legal entity and does not accept any responsibility for the actions or inactions of any individual member or correspondent firm (s ).
+
+          "PKF" and the PKF logo are registered trademarks used by PKF Global and member companies of the PKF Global Network. They cannot be used by anyone who is not a duly authorized member of the Network.</p>
+        </div>
       </div>
     </div>
 

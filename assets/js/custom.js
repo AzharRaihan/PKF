@@ -34,7 +34,9 @@ $(function(){
       $('#mySearchbar-2').css('width', '350px');
     });
 
-    $('#mySearchbar-2').hide();
+    setTimeout(function(){
+      $('#mySearchbar-2').hide();
+    }, 200);
 
 
 
