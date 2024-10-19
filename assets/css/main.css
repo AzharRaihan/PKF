@@ -18,12 +18,13 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
+  --nav-color: #0f3780;  /* The default color of the main navmenu links */
   --nav-hover-color: #052f7e ; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #052f7e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --search-color: #0eb4da;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -305,9 +306,11 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    background: #e7e7e7;
+    /* background: #e7e7e7; */
+    background: #e8e8e8;
     border-radius: 8px;
-    color: var(--nav-hover-color);
+    /* color: var(--nav-hover-color); */
+    color: #0056b3;
   }
 
   .navmenu .dropdown ul {
@@ -962,6 +965,9 @@ section,
 
 
 /* Welcome Heading */
+#welcome-section {
+  margin-top: 280px;
+}
 #welcome-section .pkf-heading{
   font-weight: 700;
 } 
@@ -981,8 +987,9 @@ section,
   list-style-type: none;
 }
 .end-menu i{
-  font-size: 25px;
-  padding-left: 15px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #444444;
 }
 .end-menu .dropdown-menu {
@@ -994,22 +1001,229 @@ section,
 }
 .end-menu .ln-title{
   padding-left: 10px;
+  padding-right: 10px;
+  color: var(--nav-color);
+  
 }
 .end-menu .nav-link {
   display: flex;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.end-menu .nav-link:hover {
+  background: #e8e8e8;
+  color: #0056b3;
+  border-radius: 8px;
+}
+.end-menu .nav-item i{
+  color: #0f3780;
+}
+.bar-trigger, .search-trigger{
+  display: flex;
+  align-items: center;
+}
+.search-trigger-2{
+  color: white;
+}
+.bar-trigger:hover, .search-trigger:hover{
+  background: #e8e8e8;
+  border-radius: 8px;
+  color: #0056b3;
 }
 
 .end-menu .dropdown-menu{
   padding: 10px;
-  transform: translate(1121px, 60px) !important; 
+  border: 1px solid #D7D4CB;
+  /* transform: translate(1121px, 60px) !important;  */
 }
-.end-menu .dropdown-item:hover{
+#MainNav .mobile-nav{
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+#MainNav .mobile-nav:hover {
+  color: #0eb4da;
+}
+#MainNav .nav-link:hover {
+  background: unset;
+  color: white;
+}
+
+#MainNav i {
+  color: #ffffff;
+}
+.bar-trigger i{
+  font-size: 27px !important;
+}
+#MainNav .m-menu li a{
+  color: white;
+}
+#MainNav .ln-title {
+  color: white;
+}
+
+#MainNav .btn-check:checked+.btn, #MainNav .btn.active, #MainNav .btn.show, #MainNav .btn:first-child:active, :not(.btn-check)+.btn:active {
+  border-color: transparent !important;
+}
+#MainNav .btn-check:checked+.btn, #MainNav .btn.active, #MainNav .btn.show, #MainNav .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: transparent !important;
+}
+#MainNav.show {
+  width: 450px;
+  height: 96vh;
+  overflow: visible;
+  max-width: calc(100% - 1em);
+  max-height: 98vh;
+}
+.mobile_menu_inner {
+  position: relative;
+  height: 100%;
+}
+.NavSocial{
+  position: absolute;
+  bottom: 35px;
+  left: 22px;
+}
+.NavSocial a i{
+  font-size: 30px;
+}
+#MainNav {
+  position: absolute;
+  background-color: var(--accent-color);
+  top: -15px;
+  right: 0.5em;
+  width: 0;
+  height: 0;
+  z-index: 80;
+  border-radius: 15px;
+  transition: all 0.1s;
+  overflow: hidden;
+}
+.carousel_custom_item{
+  background: url('../img/home/starburst.png') no-repeat;
+  /* color: #fff; */
+}
+.carousel_custom_item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+.carousel_custom_item > div {
+  max-width: 1440px;
+  height: 850px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.carousel_custom_item > div > div {
+  margin: 0 3em;
+  max-width: 520px;
+}
+.carousel_custom_item h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: .5em 0;
+  line-height: 1em;
+}
+.carousel_custom_item.Left {
+  background-position: calc(50% - calc(var(--max-width) / 4.5));
+}
+.carousel_custom_item.active {
+  display: block;
+}
+.carousel_custom_item.Dark {
+  color: #fff;
+}
+.carousel_custom_item .tc- h1{
+  color: white;
+}
+.carousel_custom_item .tc- h4{
+  color: white;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: border-box;
+
+}
+.carousel {
+  height: 100%;
+}
+.carousel-indicators{
+  bottom: 5%;
+}
+.carousel_custom_item .tc- a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 18px;
+  border: 1px solid var(--accent-color);
+  padding: 0.5em 1em;
+  margin-top: 2em;
+  color: #fff;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+#hero_wrapper{
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  height: 90vh;
+}
+#hero_wrapper .hero-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#hero_wrapper .carousel-control-prev {
+  display: none;
+}
+#hero_wrapper .carousel-control-next {
+  display: none;
+}
+/* .end-menu .dropdown-item:hover{
   background-color:#e7e7e7;
   border-radius: 5px;
   color: var(--accent-color-hover);
+} */
+.end-menu .nav-link {
+  transition: unset;
 }
-
+.end-menu .dropdown-item:focus, .end-menu .dropdown-item:hover {
+  color: unset !important;
+  background-color: unset !important;
+}
+.end-menu .dropdown-item {
+  margin-top: 3px;
+}
+.dropdown-item span{
+  padding: 2px 8px;
+  margin-top: 5px;
+}
+.dropdown-item .ln-active, .dropdown-item .ln-active {
+  color: var(--accent-color) !important;
+  border-radius: 5px;
+  background-color: #e8e8e8 !important;
+  display: inline;
+}
+.dropdown-item span:hover{
+  color: var(--accent-color) !important;
+  border-radius: 5px;
+  background-color: #e8e8e8 !important;
+  display: inline;
+}
+.end-menu .dropdown-item {
+  padding: 0px;
+}
 .sidenav {
   height: 98%;
   width: 0;
@@ -1053,15 +1267,97 @@ section,
   position: fixed;
   z-index: 1;
   top: 100px;
-  right: 9%;
+  right: 14%;
   background-color: #ffffff;
   overflow-x: hidden;
   transition: 0.5s;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0px 41px -14px rgb(0 0 0 / 0.25);
+  border: 1px solid #D7D4CB;
+}
+.mySearchbar-2 {
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  right: 16%;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0px 41px -14px rgb(0 0 0 / 0.25);
+  border: 1px solid #D7D4CB;
 }
 
+
+
+.mySearchbar input{
+  border: none;
+}
+.mySearchbar input:focus{
+  border: none;
+}
+.mySearchbar-2 input{
+  border: none;
+  font-size: 16px;
+  width: 66%;
+}
+
+.mySearchbar-2 .form-control:focus {
+  box-shadow: none;
+}
+.mySearchbar-2 > div > span{
+  font-size: 16px;
+}
+.mySearchbar-2 .search-btn {
+  background-color: var(--search-color);
+  color: var(--background-color);
+  position: absolute;
+  right: 1px;
+  top: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mySearchbar-2 .search-btn:hover {
+  background-color: var(--search-color);
+  color: var(--background-color);
+  position: absolute;
+  right: 1px;
+  top: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.mySearchbar-2 input:focus{
+  border: none;
+}
+.search-btn{
+  background-color: var(--search-color);
+  color: var(--background-color);
+  position: absolute;
+  right: -22px;
+  top: -5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
+.search-btn:hover {
+  background-color: var(--search-color);
+  color: var(--background-color);
+  position: absolute;
+  right: -22px;
+  top: -5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
 
 .mySearchbar .mySearchClosebtn {
   position: absolute;
@@ -1082,9 +1378,9 @@ section,
   background-color: var(--accent-color);
   color: white;
 }
-.heading-2 .navmenu a, .navmenu a:focus {
+/* .heading-2 .navmenu a, .navmenu a:focus {
   color: white;
-}
+} */
 .heading-2 .end-menu i {
   color: #ffffff;
 }

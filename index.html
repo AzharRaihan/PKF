@@ -30,7 +30,7 @@
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <img src="assets/img/logo/logo.png" alt="">
+          <img src="assets/img/logo/pkf-2-logo.svg" alt="">
         </a>
         <nav id="navmenu" class="navmenu">
           <ul>
@@ -41,7 +41,7 @@
             <li><a href="#">Careers</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-text-right"></i>
+          <i class="mobile-nav-toggle d-xl-none  bi bi-list"></i>
         </nav>
         <div class="end-menu">
           <li class="nav-item dropdown">
@@ -50,41 +50,138 @@
               <span class="ln-title">English</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Arabic</a></li>
-              <li><a class="dropdown-item" href="#">Bangla</a></li>
-              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#"><span class="ln-active">Arabic</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>Bangla</span></a></li>
+              <li><a class="dropdown-item" href="#"><span>English</span></a></li>
             </ul>
           </li>
           <a class="search-trigger" href="javascript:void(0)"><i class="bi bi-search"></i></a>
-          <a class="bar-trigger" href="javascript:void(0)"><i class="bi bi-text-right"></i></a>
+          <a class="bar-trigger" href="javascript:void(0)">
+            <i class="bi bi-list"></i>
+          </a>
+          <div id="MainNav" class="">
+            <nav class="mt-2 mobile_menu_inner">
+              <div class="d-flex justify-content-end align-items-center">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe"></i>
+                    <span class="ln-title">English</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span class="ln-active">Arabic</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Bangla</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>English</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="search-trigger-2" href="javascript:void(0)"><i class="bi bi-search"></i></a>
+                  <div id="mySearchbar-2" class="mySearchbar-2">
+                    <a href="javascript:void(0)" class="mySearchClosebtn">
+                      <button class="btn search-btn">Search</button>
+                    </a>
+                    <div class="d-flex align-items-center">
+                      <span>Search:</span>
+                      <input type="text" class="form-control" placeholder="Enter Keywords">
+                    </div>
+                  </div>
+                </li>
+                <button class="btn bar-trigger-2" href="javascript:void(0)">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+                <ul class="m-menu">
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      About
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      Industires
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="mobile-nav" href="#">
+                      News
+                    </a>
+                  </li>
+                  
+                </ul>
+                <div class="NavSocial">
+                  <a class="" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a class="" href="#">
+                    <i class="bi bi-wechat"></i>
+                  </a>
+                </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn"><i class="bi bi-x-circle"></i></a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Industries</a>
-      <a href="#">News</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
-    </div>
     <div id="mySearchbar" class="mySearchbar">
-      <a href="javascript:void(0)" class="mySearchClosebtn"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <input type="text" class="form-control" placeholder="Search here ...">
+      <a href="javascript:void(0)" class="mySearchClosebtn">
+        <button class="btn search-btn">Search</button>
+      </a>
+      <div class="d-flex align-items-center">
+        <span>Search:</span>
+        <input type="text" class="form-control" placeholder="Enter Keywords">
+      </div>
     </div>
   </header>
+
+
   <main class="main">
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <div id="hero_wrapper">
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-item active">
-          <img src="assets/img/Carousel-1.png" alt="">
+        <div class="carousel-item Left carousel_custom_item Dark active" style="background-color: #0f3780;">
+          <div class="">
+            <img class="" src="./assets/img/home/hong_kong03.png">
+            <div class="tc-">
+              <h4>Lorem ipsum dolor sit amet consectetur</h4>
+              <h1>2024-25 Hong Kong Budget Summary 1</h1>
+                <a href="#">2024-25 Hong Kong Budget Summary 1</a>
+            </div>
+          </div>
         </div><!-- End Carousel Item -->
-        <div class="carousel-item active">
-          <img src="assets/img/Carousel-2.png" alt="">
+        <div class="carousel-item Left carousel_custom_item Dark" style="background-color: #d24e12;">
+          <div class="">
+            <img class="" src="./assets/img/home/hong_kong03.png">
+            <div class="tc-">
+              <h4>Lorem ipsum dolor sit amet consectetur</h4>
+              <h1>2024-25 Hong Kong Budget Summary 2</h1>
+                <a href="#">2024-25 Hong Kong Budget Summary 2</a>
+            </div>
+          </div>
         </div><!-- End Carousel Item -->
+        <div class="carousel-item Left carousel_custom_item Dark " style="background-color: #099bbf;">
+          <div class="">
+            <img class="" src="./assets/img/home/hong_kong03.png">
+            <div class="tc-">
+              <h4>Lorem ipsum dolor sit amet consectetur</h4>
+
+              <h1>2024-25 Hong Kong Budget Summary 3</h1>
+                <a href="#">2024-25 Hong Kong Budget Summary 3</a>
+            </div>
+          </div>
+        </div><!-- End Carousel Item -->
+        
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
@@ -93,7 +190,7 @@
         </a>
         <ol class="carousel-indicators"></ol>
       </div>
-    </section><!-- /Hero Section -->
+    </div><!-- /Hero Section -->
 
 
     <!-- Welcome Section -->
